@@ -4,8 +4,7 @@
   "description": "this site is developed using expressjs to to track vaccine avalibility",
   "main": "app.js",
   "engines": {
-        "node": ">=10.0.0",
-        "npm": ">=6.0.0"
+        "node": "15.4.0",
     },
   "scripts": {
     "client-install": "npm install --prefix client",
