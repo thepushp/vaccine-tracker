@@ -5,6 +5,7 @@
   "main": "app.js",
   "engines": {
         "node": "15.4.0",
+        "npm": "7.0.15"
     },
   "scripts": {
     "client-install": "npm install --prefix client",
