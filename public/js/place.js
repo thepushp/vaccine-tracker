@@ -33,18 +33,18 @@ function typeWriter(selector_target, text_list, placeholder = false, i = 0, text
 }
 
 state_list = [
-    "Search your state",
-    "Bihar",
+    "Search your state   ",
+    "Bihar ",
     "Jharkhand",
     "West Bengal",
-    "Uttar Pradesh"
+    "kerala"
 ];
 district_list=[
     "Search your district",
     "Rohtas",
-    "Alwar",
-    "Lucknow",
-    "Patna"
+    "Amarawati",
+    "Lucknow    ",
+    "Patna "
 ];
 // alert("successfull")
 return_value = typeWriter("#state", state_list, true);
