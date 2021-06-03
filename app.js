@@ -53,5 +53,5 @@ app.get('/certificate', (req,res)=>{
 
 
 app.listen(process.env.PORT|| port,()=>{
-    console.log("hureyyy server started successfully")
+    console.log("hureyyy server started successfully ...")
 })

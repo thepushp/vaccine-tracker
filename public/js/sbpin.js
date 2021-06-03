@@ -177,14 +177,14 @@ function runpinfinder() {
     try {
       let data = await fetch(api);
       realpin = await data.json();
-      console.log(realpin.centers[0].fee_type)
+      // console.log(realpin.centers[0].fee_type)
     }
     catch (err) { }
     // for (var i = 0; i < 37; i++) {
     //   stat_name.push(realpin.states[i].state_name);
     //   stid.push(realpin.states[i].state_id)
     // }
-    console.log(realpin);
+    // console.log(realpin);
     populate();
 
   };
@@ -197,11 +197,11 @@ function myStopFunction() {
 var cardtmp = '';
 function populate() {
   cardtmp = "";
-  console.log("ho ja bhai",realpin.centers[0].sessions[0].available_capacity)
+  // console.log("ho ja bhai",realpin.centers[0].sessions[0].available_capacity)
   for (var i = 0; i < realpin.centers.length; i++)
     for (var j = 0; j < realpin.centers[i].sessions.length; j++) {
       if (realpin.centers[i].sessions[j].available_capacity > 0) {
-        console.log("hua bhai run");
+        // console.log("hua bhai run");
         if (((realpin.centers[i].sessions[j].min_age_limit == age18 || realpin.centers[i].sessions[j].min_age_limit == age45) || mage == 1)
           && ((realpin.centers[i].sessions[j].vaccine == vacc1 || realpin.centers[i].sessions[j].vaccine == vacc2 || realpin.centers[i].sessions[j].vaccine == vacc3) || mvacc == 1)
           && ((realpin.centers[i].fee_type == fee1 || realpin.centers[i].fee_type == fee2) || mfee == 1)) {

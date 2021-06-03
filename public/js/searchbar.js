@@ -233,7 +233,7 @@ const statedata = async () => {
   try {
     let data = await fetch(api);
     realdata = await data.json();
-    console.log(realdata)
+    // console.log(realdata)
   }
   catch (err) { }
   for (var i = 0; i < 37; i++) {
@@ -243,7 +243,7 @@ const statedata = async () => {
   autocomplete(document.getElementById("state"), stat_name);
 
   // mydist();
-  console.log(stat_name)
+  // console.log(stat_name)
 
 };
 statedata();
@@ -271,7 +271,7 @@ function mydist() {
       try {
         let dist = await fetch(api2);
         realdist = await dist.json();
-        console.log(realdist)
+        // console.log(realdist)
       }
       catch (err) { }
       for (var i = 0; i < realdist.districts.length; i++) {
@@ -283,7 +283,7 @@ function mydist() {
     districtdata();
 
   }
-  console.log(inputdata);
+  // console.log(inputdata);
 }
 
 
@@ -314,7 +314,7 @@ function myvaccine() {
         today = dmy.substring(8, 10) + dmy.substring(4, 7) + '-' + dmy.substring(0, 4);
         // alert(today);
       }
-      console.log(today)
+      // console.log(today)
       const api3 = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=${tmp_did}&date=${today}`;
 
       try {
@@ -340,7 +340,7 @@ function myvaccine() {
 
     // alert(center_name.length)
   }
-  console.log(inputdist);
+  // console.log(inputdist);
 
   // document.getElementById("center").innerText=center_name[0].available_capacity_dose2;
 }
@@ -361,7 +361,7 @@ function populate() {
         && ((center_name[i].vaccine == vacc1 || center_name[i].vaccine == vacc2 || center_name[i].vaccine == vacc3) || mvacc == 1)
         && ((center_name[i].fee_type == fee1 || center_name[i].fee_type == fee2) || mfee == 1)) {
         alarmx.play();
-        console.log(age18);
+        // console.log(age18);
         cardtmp += `<div class="row" id="rowa">
                     <div class="card">
                   
