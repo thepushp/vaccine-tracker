@@ -225,7 +225,7 @@ function populate() {
                         <li>min_age_limit: ${realpin.centers[i].sessions[j].min_age_limit}</li>
                         <li>Vaccine: ${realpin.centers[i].sessions[j].vaccine}</li>
                         <li>${realpin.centers[i].fee_type}</li>
-                        <li>Stay Home Stay Safe!</li>
+                        <li><b>Stay Home Stay Safe!</b></li>
                       </ul>
                       </div>
                     </div>

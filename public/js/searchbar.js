@@ -380,7 +380,7 @@ function populate() {
                         <li>min_age_limit: ${center_name[i].min_age_limit}</li>
                         <li>Vaccine: ${center_name[i].vaccine}</li>
                         <li>${center_name[i].fee_type}</li>
-                        <li>Naming Conventions</li>
+                        <li><b>Stay Home Stay Safe!</b></li>
                       </ul>
                       </div>
                     </div>
