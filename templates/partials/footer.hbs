@@ -1,0 +1,42 @@
+<footer class="text-center text-white"
+    style="background-color: #45637d; margin-top: clamp(44px, 25vw, 200px); margin-bottom:0%">
+    <!-- Grid container -->
+    {{!-- margin-top:180px --}}
+    {{!-- position: fixed left: 0; bottom: 0; width:100%--}}
+    {{#if show_props}}
+
+    <div class="container p-2">
+        <marquee scrolldelay="1" onMouseOver="this.stop()" onMouseOut="this.start()">
+            <!-- Section: Iframe -->
+            <section class="">
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-lg-6">
+                        <div class="ratio ratio-16x9">
+
+                            {{#each show_props}}
+                            <iframe class="shadow-1-strong rounded mx-2"  style="position: relative; width: 20vmin width: 30vw; overflow: hidden;"
+                                src="https://www.youtube.com/embed/{{this.link}}" title="YouTube video"
+                                allowfullscreen></iframe>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Section: Iframe -->
+        </marquee>
+
+    </div>
+    {{/if}}
+
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="#">Pushpraj Priy</a>
+    </div>
+    <!-- Copyright -->
+</footer>
